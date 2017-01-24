@@ -26,7 +26,18 @@ class login_request extends Request
         return [
             //
             "username"=>"required|min:5",
-            "password"=>"required",
+            "password"=>"required|min:6|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/",
+        ];
+    }
+        public function messages()
+    {
+        return [
+            //
+            'username.required'=>'Vui lòng nhập username',
+            'username.min'=>'Username phải có ít nhất 5 ký tự',
+            'password.required'=>'Vui lòng nhập Password',
+            'password.min'=>'Password phải có ít nhất 6 ký tự',
+            'password.regex'=>'Password phải có ít nhất 1 ký tự viết hoa, viết thường và số',
         ];
     }
 }
