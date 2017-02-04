@@ -29,6 +29,9 @@ background-position:center;">
 
     <p class="welcomelogin">Welcome...</p>
     <p class="welcomelogin2">Sign into your account</p>
+    <?php if(isset($thong_bao)): ?>
+      <p class="welcomelogin2"><?php echo e($thong_bao); ?></p>
+    <?php endif; ?>
 <?php echo Form::text("username","",array("class"=>"username","placeholder"=>"Username","required"=>"required")); ?>
 
 <?php echo Form::password("password",array("class"=>"password","placeholder"=>"Password","required"=>"required")); ?>

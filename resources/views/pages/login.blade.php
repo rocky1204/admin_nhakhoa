@@ -28,6 +28,9 @@ background-position:center;">
 {!!Form::open(array("routes"=>"post_login","class"=>"dangnhap"))!!}
     <p class="welcomelogin">Welcome...</p>
     <p class="welcomelogin2">Sign into your account</p>
+    @if(isset($thong_bao))
+      <p class="welcomelogin2">{{$thong_bao}}</p>
+    @endif
 {!!Form::text("username","",array("class"=>"username","placeholder"=>"Username","required"=>"required"))!!}
 {!!Form::password("password",array("class"=>"password","placeholder"=>"Password","required"=>"required"))!!}
 {!!Form::submit("Sign in",array("class"=>"btndangnhap btn-primary"))!!}
