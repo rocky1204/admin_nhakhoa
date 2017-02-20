@@ -3977,3 +3977,9 @@ ul.notifications {
   border: 1px solid #e5e5e5; }
 
 /** /Dropzone.js **/
+.phan_trang_admin{
+    padding: 0 0 0 20px;
+}
+.phan_trang_admin .pagination{
+    margin: 0;
+}
