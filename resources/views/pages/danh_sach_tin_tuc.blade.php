@@ -22,6 +22,9 @@
                                 Loại tin
                             </td>
                             <td >
+                                Sửa tin
+                            </td>
+                            <td >
                                 Chọn
                             </td>
                         </tr>
@@ -35,6 +38,9 @@
                             </td>
                             <td >
                                 {{ $tin->NameVn}}
+                            </td>
+                            <td >
+                                <img width="50%" src='{{url("/")}}/images/pencil_48.png'/>
                             </td>
                             <td >
                                   <input name="thao_tac[]" type="checkbox" value="{{ $tin->NewsID }}" />

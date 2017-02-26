@@ -22,5 +22,5 @@ Route::get('/','admin_controller@trangchao');
 Route::get('/danh-muc-tin','admin_controller@danhmuc');
 //Route::get('/danh-sach-tin-tuc','admin_controller@danhsachtintuc');
 Route::get('/{alias}/', 'admin_controller@giao_dien_menu');
-Route::post('danh-sach-san-pham/', ['as' => 'post_xoa_tin_tuc', 'uses' => 'admin_controller@xoa_tin_tuc']);
+Route::post('/danh-sach-san-pham/', ['as' => 'post_xoa_tin_tuc', 'uses' => 'admin_controller@xoa_tin_tuc']);
 
